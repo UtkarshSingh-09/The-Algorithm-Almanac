@@ -5,3 +5,4 @@ transformers
 sentence-transformers
 chromadb
 python-multipart
+sentencepiece
