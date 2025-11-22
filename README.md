@@ -70,3 +70,23 @@ The-Algorithm-Almanac/
 │   └── vite.config.ts        # Bundler Config
 │
 └── 📄 README.md              # Project Documentation
+
+## ⚡ Getting Started Guide
+
+### Prerequisites
+* **Python 3.9+**
+* **Node.js 16+**
+* Legal copy of source material (converted to `knowledge_base.json`)
+
+### 1️⃣ Backend Configuration
+
+```bash
+cd backend
+
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
