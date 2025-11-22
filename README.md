@@ -35,8 +35,7 @@ This project processes the book's content into a vector database and uses the **
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/your-username/hands-on-ml-tutor.git](https://github.com/your-username/hands-on-ml-tutor.git)
-    cd hands-on-ml-tutor
+    git clone https://github.com/UtkarshSingh-09/The-Algorithm-Almanac.git
     ```
 
 2.  **Create a virtual environment**
