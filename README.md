@@ -146,6 +146,11 @@ This project is distributed under the **MIT License**.
 
 ---
 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/f238d579-1f36-4801-bc06-891011f8878d" width="45%" />
+<img src="https://github.com/user-attachments/assets/fc6ebd5f-0d5f-46ab-a682-d40dd2dc5c3e" width="45%" />
+</p>
+
 <div align="center">
   <sub>Built with ❤️ by Utkarsh Singh</sub>
 </div>
