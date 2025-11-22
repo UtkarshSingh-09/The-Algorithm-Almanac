@@ -70,6 +70,8 @@ The-Algorithm-Almanac/
 │   └── vite.config.ts        # Bundler Config
 │
 └── 📄 README.md              # Project Documentation
+```
+---
 
 ## ⚡ Getting Started Guide
 
@@ -78,7 +80,7 @@ The-Algorithm-Almanac/
 * **Node.js 16+**
 * Legal copy of source material (converted to `knowledge_base.json`)
 
-### 1️⃣ Backend Configuration
+### Backend Configuration
 
 ```bash
 cd backend
@@ -89,4 +91,61 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
+**Data Ingestion (Critical Step):**
+```bash
+python index.py
+```
+**Launch Server**
+```bash
+python main.py
+```
 
+**Server active at http://localhost:8000**
+
+### Frontend Configuration
+```bash
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+**Access app at http://localhost:5173**
+
+---
+## 🔌 API Reference
+
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `POST` | `/ask` | **Primary Endpoint.** Accepts `{"text": "query"}`. Returns answer & source metadata. |
+| `GET` | `/health` | Status check for models and DB. |
+| `GET` | `/test-retrieval/{q}` | **Debug.** Inspect raw vector matches. |
+| `GET` | `/docs` | Interactive Swagger UI. |
+
+---
+
+## 🔧 Troubleshooting
+
+* **Error: "Knowledge base unavailable"**
+    * *Fix:* Run `python index.py` to build the `chroma_db` folder.
+* **Error: CORS issues**
+    * *Fix:* Whitelist `http://localhost:5173` in `main.py` middleware.
+* **Performance: Slow first response**
+    * *Note:* Models must download from Hugging Face on the first run.
+
+---
+
+## 📜 License & Disclaimer
+
+This project is distributed under the **MIT License**.
+
+> **Disclaimer:** This tool is for **educational purposes only**. The `knowledge_base.json` file is not included. Users must generate their own dataset from legally purchased copies of the source material.
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by Utkarsh Singh</sub>
+</div>
